@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/skharshad/simpleshop.git'
+                git branch: 'main', url: 'https://github.com/skharshad/simpleshop.git'
             }
         }
         stage('Install Dependencies') {
